@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.logo {
+  width: 100px;
+}
+
+.filmek {
+  padding-top: 15vh;
+}
+
+.kartya > img {
+  width: 230px;
+  border-radius: 10%;
+}
+
+.kartya {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  border-bottom: 2px solid black;
+}
+
+.idopont_ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.idopont_elem {
+  background-color: #f5821e;
+  padding: 1rem;
+  border-radius: 10%;
+}
+
+.idopont_elem:hover {
+  background-color: #bb6215;
+}
+
+.idopont_elem > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
