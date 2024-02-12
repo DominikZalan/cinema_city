@@ -1,8 +1,14 @@
-.urlap1main{
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
 }
 .urlap1ul{
     display: grid;
-    grid-template-columns: repeat(4, 220px);
+    grid-template-columns: repeat(4, 250px);
     justify-content: center;
 }
 .fejlec{
@@ -28,7 +34,7 @@ svg{
 }
 .urlap1section{
     background-color: white;
-    height: 700px;
+    height: 500px;
     width: 60%;
     margin: auto;
 }
@@ -38,9 +44,77 @@ svg{
 }
 .vasarlas{
     margin: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid orange;
+}
+.btnkov{
+    background-color: orange;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    margin: 20px;
+}
+.btnvissza{
+    background-color: white;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    margin: 20px;
+}
+.gombok{
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
 }
 footer{
     background-color: black;
-    height: 300px;
+    height: 120px;
+}
+@media only screen and (max-width: 1200px) {
+    .urlap1ul {
+        display: grid;
+        grid-template-rows: repeat(4, 0px);
+        justify-content: center;
+    }
+    .gombok{
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+@media only screen and (max-width: 900px) {
+    .gombok{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+@media only screen and (max-width: 720px) {
+    .gombok{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+@media only screen and (max-width: 620px) {
+    .gombok{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+    }
+}
+@media only screen and (max-width: 400px) {
+    .gombok{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        justify-content: center;
+    }
+    .btnkov{
+        background-color: orange;
+        width: 100px;
+        height: 40px;
+        font-size: 10px;
+        margin: 20px;
+    }
+    .btnvissza{
+        background-color: white;
+        width: 100px;
+        height: 40px;
+        font-size: 10px;
+        margin: 20px;
+    }
 }
