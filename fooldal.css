@@ -17,11 +17,18 @@
 
 .filmek {
   padding-top: 15vh;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .kartya > img {
   width: 230px;
   border-radius: 10%;
+}
+
+.kartya > img:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .kartya {
@@ -44,6 +51,7 @@
   background-color: #f5821e;
   padding: 1rem;
   border-radius: 10%;
+  transition: 0.3s ease-in-out;
 }
 
 .idopont_elem:hover {
@@ -54,4 +62,40 @@
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+.eletkor-kategoria {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 1rem;
+}
+
+section {
+  padding-bottom: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-container > p {
+  color: rgb(83, 83, 83);
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 530px) {
+  .kartya {
+    grid-template-columns: 1fr;
+  }
+  .kartya > img {
+    display: block;
+    margin: auto;
+  }
+  .kartya-belso {
+    padding-left: 1rem;
+    border-left: 1.5px solid rgba(128, 128, 128, 0.611);
+  }
 }

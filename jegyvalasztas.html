@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="CinemaCity foglaló oldal" />
+    <meta name="keywords" content="cinemacity, mozi, foglalás, űrlap" />
+    <meta name="author" content="Dobos Dominik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dobos Dominik, Bitó Zalán</title>
+    <link rel="stylesheet" href="stilus.css" />
+    <link rel="stylesheet" href="jegyvalasztas.css" />
+  </head>
+  <body>
+    <main>
+      <div class="fejlec">
+        <nav class="urlap_nav">
+          <img
+            class="logo"
+            src="kepek/logo.svg"
+            alt="logo"
+            onclick="location.href='index.html'"
+          />
+          <div class="nav_tarolo">
+            <div class="nav_elem aktiv_elem">
+              <p><span>1</span> JEGYTÍPUS VÁLASZTÁS</p>
+            </div>
+            <div class="nav_elem">
+              <p><span>2</span> VISSZAIGAZOLÁS</p>
+            </div>
+            <div class="nav_elem">
+              <p><span>3</span> BEFEJEZÉS</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section class="urlap_section">
+        <h1>JEGYEK KIVÁLASZTÁSA</h1>
+        <form>
+          <div class="form_container">
+            <table>
+              <tr>
+                <th>TÍPUS</th>
+                <th>ÁR</th>
+                <th>KÉNYELMI DÍJ</th>
+                <th>DARAB</th>
+              </tr>
+              <tr>
+                <th>FELNŐTT, TELJES ÁRÚ JEGY</th>
+                <td>2 900.00 FT</td>
+                <td>120.00 FT</td>
+                <td>
+                  <select name="darab" id="darab">
+                    <option value="nulla">0</option>
+                    <option value="egy">1</option>
+                    <option value="ketto">2</option>
+                    <option value="harom">3</option>
+                    <option value="negy">4</option>
+                    <option value="ot">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>DIÁKJEGY</th>
+                <td>2 400.00 FT</td>
+                <td>120.00 FT</td>
+                <td>
+                  <select name="darab" id="darab">
+                    <option value="nulla">0</option>
+                    <option value="egy">1</option>
+                    <option value="ketto">2</option>
+                    <option value="harom">3</option>
+                    <option value="negy">4</option>
+                    <option value="ot">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>JUINOR JEGY</th>
+                <td>2 400.00 FT</td>
+                <td>120.00 FT</td>
+                <td>
+                  <select name="darab" id="darab">
+                    <option value="nulla">0</option>
+                    <option value="egy">1</option>
+                    <option value="ketto">2</option>
+                    <option value="harom">3</option>
+                    <option value="negy">4</option>
+                    <option value="ot">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>SENIOR JEGY</th>
+                <td>2 400.00 FT</td>
+                <td>120.00 FT</td>
+                <td>
+                  <select name="darab" id="darab">
+                    <option value="nulla">0</option>
+                    <option value="egy">1</option>
+                    <option value="ketto">2</option>
+                    <option value="harom">3</option>
+                    <option value="negy">4</option>
+                    <option value="ot">5</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <div class="btn_container">
+              <button
+                class="btnvissza"
+                onclick="location.href='urlap.html'; return false"
+              >
+                VISSZA
+              </button>
+              <input
+                type="submit"
+                value="KÖVETKEZŐ"
+                class="btnkov"
+                onclick="location.href='visszaigazolas.html'; return false"
+              />
+            </div>
+          </div>
+        </form>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <p>Bitó Zalán</p>
+          <p>Dobos Dominik</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="CinemaCity foglaló oldal" />
+    <meta name="keywords" content="cinemacity, mozi, foglalás, űrlap" />
+    <meta name="author" content="Dobos Dominik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dobos Dominik, Bitó Zalán</title>
+    <link rel="stylesheet" href="stilus.css" />
+  </head>
+  <body>
+    <main>
+      <div class="fejlec">
+        <nav class="urlap_nav">
+          <img
+            class="logo"
+            src="kepek/logo.svg"
+            alt="logo"
+            onclick="location.href='index.html'"
+          />
+          <div class="nav_tarolo">
+            <div class="nav_elem">
+              <p><span>1</span> JEGYTÍPUS VÁLASZTÁS</p>
+            </div>
+            <div class="nav_elem aktiv_elem">
+              <p><span>2</span> VISSZAIGAZOLÁS</p>
+            </div>
+            <div class="nav_elem">
+              <p><span>3</span> BEFEJEZÉS</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section class="urlap_section">
+        <h1>VISSZAIGAZOLÁS</h1>
+        <form>
+          <div class="form_container">
+            <div>
+              <label for="ajandekjegy" id="ajandekjegy" name="ajandekjegy"
+                >VAN AJÁNDÉKJEGYED?</label
+              >
+              <input
+                type="text"
+                id="ajandekjegy"
+                for="ajandekjegy"
+                name="ajandekjegy"
+              />
+            </div>
+            <div class="btn_container">
+              <button
+                class="btnvissza"
+                onclick="location.href='jegyvalasztas.html'; return false"
+              >
+                VISSZA
+              </button>
+              <input
+                type="submit"
+                value="KÖVETKEZŐ"
+                class="btnkov"
+                onclick="location.href='jegyvalasztas.html'; return false"
+              />
+            </div>
+          </div>
+        </form>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <p>Bitó Zalán</p>
+          <p>Dobos Dominik</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

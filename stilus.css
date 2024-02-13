@@ -6,115 +6,131 @@
   margin: 0;
   font-family: "PT Sans", sans-serif;
 }
-.urlap1ul{
-    display: grid;
-    grid-template-columns: repeat(4, 250px);
-    justify-content: center;
+
+.urlap_nav {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  grid-template-rows: 1fr max-content;
 }
-.fejlec{
-    background-color: black;
-    width: 100%;
-    margin: auto;
+
+.fejlec {
+  background-color: black;
+  width: 100%;
+  margin: auto;
+  height: 15vh;
 }
-.urlap1li{
-    border: 1px solid white;
-    list-style: none;
-    color: white;
-    text-align: center;
-    padding: 5px;
+
+.nav_tarolo {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid white;
+  background-color: white;
 }
-.urlap1img{
-    margin: 10px;
-    width: 100px;
-    margin-left: 150px;
+
+.nav_elem {
+  background-color: black;
+  padding: 3px 5px;
 }
-svg{
-    padding-right: 10px;
-    float: left;
+
+.nav_elem > p {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 10px;
 }
-.urlap1section{
-    background-color: white;
-    height: 500px;
-    width: 60%;
-    margin: auto;
+
+.aktiv_elem {
+  background-color: gray;
 }
-.foglalas{
-    margin: 10px;
-    border-bottom: 1px solid black;
+
+.nav_elem span {
+  padding: 3px;
+  padding-left: 8px;
+  background-color: #f5821e;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
-.vasarlas{
-    margin: 10px;
-    border-bottom: 1px solid orange;
+
+.logo {
+  margin: 10px;
+  width: 100px;
+  cursor: pointer;
 }
-.btnkov{
-    background-color: orange;
-    width: 150px;
-    height: 60px;
-    font-size: 20px;
-    margin: 20px;
+
+.urlap_section {
+  background-color: white;
+  min-height: 70vh;
+  width: 50%;
+  margin: auto;
+  padding-top: 2vh;
 }
-.btnvissza{
-    background-color: white;
-    width: 150px;
-    height: 60px;
-    font-size: 20px;
-    margin: 20px;
+
+.foglalas {
+  margin: 10px;
+  border-bottom: 1px solid black;
 }
-.gombok{
-    display: grid;
-    grid-template-columns: repeat(2, 700px);
+
+.vasarlas {
+  margin: 10px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid orange;
 }
-footer{
-    background-color: black;
-    height: 120px;
+
+.btn_container {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 0;
+  padding-top: 3vh;
 }
-@media only screen and (max-width: 1200px) {
-    .urlap1ul {
-        display: grid;
-        grid-template-rows: repeat(4, 0px);
-        justify-content: center;
-    }
-    .gombok{
-        display: grid;
-        grid-template-columns: repeat(2, 350px);
-    }
+
+.btnkov {
+  background-color: #f5821e;
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
 }
-@media only screen and (max-width: 900px) {
-    .gombok{
-        display: grid;
-        grid-template-columns: repeat(2, 250px);
-    }
+
+.btnkov:hover {
+  background-color: #bb6215;
 }
-@media only screen and (max-width: 720px) {
-    .gombok{
-        display: grid;
-        grid-template-columns: repeat(2, 200px);
-    }
+
+.btnvissza {
+  background-color: white;
+  width: 100px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
-@media only screen and (max-width: 620px) {
-    .gombok{
-        display: grid;
-        grid-template-columns: repeat(2, 150px);
-    }
+
+.btnvissza:hover {
+  background-color: rgb(231, 231, 231);
 }
-@media only screen and (max-width: 400px) {
-    .gombok{
-        display: grid;
-        grid-template-columns: repeat(2, 150px);
-        justify-content: center;
-    }
-    .btnkov{
-        background-color: orange;
-        width: 100px;
-        height: 40px;
-        font-size: 10px;
-        margin: 20px;
-    }
-    .btnvissza{
-        background-color: white;
-        width: 100px;
-        height: 40px;
-        font-size: 10px;
-        margin: 20px;
-    }
+
+.gombok {
+  display: grid;
+  grid-template-columns: repeat(2, 700px);
+}
+
+footer {
+  background-color: black;
+  height: 15vh;
+}
+
+.footer-container {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-container > p {
+  color: rgb(83, 83, 83);
+  font-size: 1.3rem;
 }
