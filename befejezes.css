@@ -1,0 +1,69 @@
+section p {
+  padding: 1rem 0;
+}
+
+h2 {
+  padding-bottom: 1vh;
+}
+
+.elegedettseg_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.kerdes {
+  border-top: 2px solid black;
+  padding-bottom: 1rem;
+}
+
+.kerdes:nth-child(4) {
+  border-bottom: 2px solid black;
+}
+
+textarea {
+  width: 40%;
+  resize: vertical;
+  max-height: 10vh;
+  min-height: 4vh;
+}
+
+.hirlevel_check-div {
+  display: flex;
+  align-items: start;
+  padding-top: 1rem;
+}
+
+.hirlevel_check-div > input[type="checkbox"] {
+  margin-top: 4px;
+}
+
+.hirlevel_check-div > label {
+  color: rgba(76, 76, 76, 0.791);
+  padding: 0 0 0 5px;
+}
+
+.hirlevel_elrendezes {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.hirlevel_elrendezes > label {
+  flex-basis: 60px;
+}
+
+form h2 {
+  padding: 1rem 0 0 0;
+}
+
+@media screen and (max-width: 630px) {
+  .elegedettseg_flex {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}

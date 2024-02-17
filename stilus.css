@@ -9,16 +9,15 @@
 
 .urlap_nav {
   display: grid;
-  width: 50%;
+  max-width: 50%;
+  min-width: fit-content;
   margin: auto;
   grid-template-rows: 1fr max-content;
 }
 
 .fejlec {
   background-color: black;
-  width: 100%;
-  margin: auto;
-  height: 15vh;
+  min-height: 15vh;
 }
 
 .nav_tarolo {
@@ -32,6 +31,7 @@
 .nav_elem {
   background-color: black;
   padding: 3px 5px;
+  min-width: 200px;
 }
 
 .nav_elem > p {
@@ -39,6 +39,7 @@
   color: white;
   align-items: center;
   gap: 10px;
+  cursor: default;
 }
 
 .aktiv_elem {
@@ -65,7 +66,7 @@
   min-height: 70vh;
   width: 50%;
   margin: auto;
-  padding-top: 2vh;
+  padding: 2vh 0 2vh 0;
 }
 
 .foglalas {
@@ -133,27 +134,45 @@ footer {
 .footer-container > p {
   color: rgb(83, 83, 83);
   font-size: 1.3rem;
+  cursor: default;
 }
 
-.nevekform{
-  margin: 10px;
+/* FORM */
+
+.visszaigazolas_form {
   display: grid;
-  grid-template-columns: repeat(2, 250px);
-  margin-left: 0px;
+  grid-template-columns: repeat(2, 0.3fr);
+  gap: 10px;
 }
 
-.elerhetoseg{
-  margin: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 250px);
-  margin-left: 0px;
-}
-
-.check{
+.check {
   margin-bottom: 3px;
 }
-.fizetesmod{
+.fizetesmod {
   display: grid;
   grid-template-rows: repeat(2, 15px);
   padding: 10px;
+}
+
+@media screen and (max-width: 630px) {
+  .nav_tarolo {
+    grid-template-columns: 1fr;
+  }
+
+  .fejlec {
+    padding-bottom: 1vh;
+  }
+  .visszaigazolas_form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn_container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .btnvissza {
+    order: 1;
+  }
 }

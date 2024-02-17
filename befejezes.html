@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dobos Dominik, Bitó Zalán</title>
     <link rel="stylesheet" href="stilus.css" />
+    <link rel="stylesheet" href="befejezes.css" />
   </head>
   <body>
     <main>
@@ -33,85 +34,139 @@
         </nav>
       </div>
       <section class="urlap_section">
-        <h1>ADJA MEG ADATAIT A VÉGLEGESÍTÉSHEZ!</h1>
-        <form action="/action_page.php">
+        <h1>SIKERES JEGYVÁSÁRLÁS!</h1>
+        <p>
+          Köszönjük, hogy a CINEMA CITY-t választotta. Vásárlását
+          visszaigazoljuk.
+        </p>
+        <p>
+          A kedvezményes jegyek kizárólag a kedvezményt igazoló kártyával,
+          okirattal együtt érvényesek és jogosítanak belépésre.
+        </p>
+        <h2>FELMÉRÉS</h2>
+        <form action="">
           <div class="form_container">
-            <div class="nevekform">
-              <div class="vnev">
-                <label for="fname">*VEZETÉKNÉV</label><br />
-                <input type="text" id="fname" name="fname" value="" /><br />
-              </div>
-              <div class="knev">
-                <label for="lname">*KERESZTNÉV</label><br />
-                <input
-                  type="text"
-                  id="lname"
-                  name="lname"
-                  value=""
-                /><br /><br />
-              </div>
-            </div>
-            <div class="elerhetoseg">
-              <div class="email">
-                <label for="email">*EMAIL</label><br />
-                <input type="email" id="email" name="email" /><br />
-              </div>
-              <div class="tel">
-                <label for="phone">*TELEFONSZÁM</label><br />
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder=""
-                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                  required
-                /><br /><br />
+            <div class="kerdes">
+              <p>Mennyire volt elégedett a jegyvásárlás menetével?</p>
+              <div>
+                <div class="elegedettseg_flex">
+                  <input type="radio" id="eleg_1" name="eleg" value="1" />
+                  <input type="radio" id="eleg_2" name="eleg" value="2" />
+                  <input type="radio" id="eleg_3" name="eleg" value="3" />
+                  <input type="radio" id="eleg_4" name="eleg" value="4" />
+                  <input type="radio" id="eleg_5" name="eleg" value="5" />
+                </div>
+                <div class="elegedettseg_flex">
+                  <label for="eleg_1">1</label>
+                  <label for="eleg_2">2</label>
+                  <label for="eleg_3">3</label>
+                  <label for="eleg_4">4</label>
+                  <label for="eleg_5">5</label>
+                </div>
               </div>
             </div>
-            <div class="check">
-              <input
-                class="check"
-                type="checkbox"
-                id="aszf"
-                name="elfogadas"
-                value="check"
-              />
-              <label for="vehicle1"
-                >Elolvastam és elfogadom a Cinema City Házirendjét, Adatvédelmi
-                tájékoztatóját, Általános Szerzodési Feltételeit az online
-                jegyfoglalásra és jegyvásárlása vonatkozóan.</label
-              ><br /><br />
+            <div class="kerdes">
+              <p>
+                Mivel tehetnénk kényelmesebbé a jegyvásárlást? Kérjük fejtse ki.
+              </p>
+              <textarea
+                name="kenyelmesebb"
+                id="kenyelmesebb"
+                placeholder="Ingyen jeggyel!"
+              ></textarea>
             </div>
-            <h2>FIZETÉS MÓDJA</h2>
-            <div class="fizetesmod">
-              
-              <div class="kartya">
+            <div class="kerdes">
+              <p>
+                Milyen filmekből látna mégtöbbet legszívesebben a CINEMA
+                CITY-ben?
+              </p>
+              <div>
+                <div>
+                  <input type="checkbox" name="drama" id="drama" />
+                  <label for="drama">Dráma</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="akcio" id="akcio" />
+                  <label for="akcio">Akció</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="vigjatek" id="vigjatek" />
+                  <label for="vigjatek">Vígjáték</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="horror" id="horror" />
+                  <label for="horror">Horror</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="romantikus" id="romantikus" />
+                  <label for="romantikus">Romantikus</label>
+                </div>
+              </div>
+            </div>
+            <div class="kerdes">
+              <p>Honnan hallott a CINEMA CITY-ről?</p>
+              <select name="honnan_hallott" id="honnan_hallott">
+                <option value="egyeb">Egyéb</option>
+                <option value="online">Online hirdetés</option>
+                <option value="plaza">Plázában láttam</option>
+                <option value="valos">Hirdető tábla</option>
+                <option value="ismeros">Ismerőstől</option>
+              </select>
+            </div>
+            <h2>IRATKOZZON FEL A HÍRLEVELÜNKRE</h2>
+            <div>
+              <p>
+                Ha elsőként szeretnél értesülni premier előtti vetítéseinkről,
+                jegyelővétel lehetőségről, filmes ajánlókról és
+                nyereményjátékainkról, jelezd nekünk itt, és mi rendszeresen
+                tájékoztatunk arról, ami téged igazán érdekel a filmekkel
+                kapcsolatban!
+              </p>
+              <div class="hirlevel_elrendezes">
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="email@domain.hu" />
+              </div>
+              <div class="hirlevel_elrendezes">
+                <label for="nev">Név:</label>
+                <input type="text" placeholder="Vezetéknév Keresztnév" />
+              </div>
+              <div class="hirlevel_check-div">
                 <input
-                  type="radio"
-                  id="html"
-                  name="fav_language"
-                  value="HTML"
+                  type="checkbox"
+                  name="hirlevel_check_AT"
+                  id="hirlevel_check_AT"
+                  class="hirlevel_check"
                 />
-                  <label for="html">Bankkártya</label><br />
+                <label for="hirlevel_check_AT">
+                  Nyilatkozom, hogy a hírlevélre vonatkozó Adatkezelési
+                  Tájékoztatót elolvastam és megértettem.
+                </label>
               </div>
-               
-              <div class="kp">
-                <input type="radio" id="css" name="fav_language" value="CSS" />
-                  <label for="css">Készpénz</label><br />
+              <div class="hirlevel_check-div">
+                <input
+                  type="checkbox"
+                  name="hirlevel_check_ASZ"
+                  id="hirlevel_check_ASZ"
+                  class="hirlevel_check"
+                />
+                <label for="hirlevel_check_ASZ">
+                  Igen szeretnék feliratkozni a Cinema City ingyenes
+                  hírlevelére, melyekben az I.T. Magyar Cinema Kft. ( székhelye:
+                  1132 Budapest, Váci út 22-24.) tájékoztat a premier előtti
+                  vetítéseikről, jegyelővétel lehetőségről, filmes ajánlókról és
+                  nyereményjátékaikról és hozzájárulok ahhoz, hogy ezzel
+                  összefüggésben a megadott adataimat az Adatvédelmi
+                  Szabályzatban leírtaknak megfelelően kezelje. Az űrlap
+                  kitöltése és az adatok megadása önkéntes.
+                </label>
               </div>
             </div>
             <div class="btn_container">
-              <button
-                class="btnvissza"
-                onclick="location.href='visszaigazolas.html'; return false"
-              >
-                VISSZA
-              </button>
               <input
                 type="submit"
                 value="KÖVETKEZŐ"
                 class="btnkov"
-                onclick="location.href='befejezes.html'; return false"
+                onclick="location.href='index.html'; return false"
               />
             </div>
           </div>
