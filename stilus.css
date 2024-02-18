@@ -147,11 +147,48 @@ footer {
 
 .check {
   margin-bottom: 3px;
+  border-bottom: 1px solid black;
 }
 .fizetesmod {
   display: grid;
-  grid-template-rows: repeat(2, 15px);
+  grid-template-columns: repeat(4, 120px);
   padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.kartyaadatok {
+  margin: 5px;
+}
+
+.kartyaadat1 {
+  margin: 10px;
+  margin-left: 1px;
+}
+
+.kartyaadat2 {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  margin-bottom: 10px;
+}
+.kartyainput {
+  width: 230px;
+  height: 30px;
+  margin-top: 2px;
+}
+
+.kartyainput2 {
+  width: 100px;
+  height: 30px;
+}
+
+.kartyaikon {
+  display: grid;
+  grid-template-columns: repeat(2, 30px);
+}
+
+.bankkartyaform{
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 630px) {
@@ -162,6 +199,17 @@ footer {
   .fejlec {
     padding-bottom: 1vh;
   }
+
+  .fizetesmod {
+    display: grid;
+    grid-template-columns: repeat(2, 15px);
+    padding: 10px;
+  }
+
+  .fizmodvalasztas {
+    display: flex;
+  }
+
   .visszaigazolas_form {
     grid-template-columns: 1fr;
   }
