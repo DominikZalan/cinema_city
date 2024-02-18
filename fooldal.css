@@ -90,7 +90,7 @@ section {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 750px) {
   .kartya {
     grid-template-columns: 1fr;
   }
